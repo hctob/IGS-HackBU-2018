@@ -3,7 +3,7 @@ var wallSpr;
 var river;
 
 function setup() {
-	createCanvas(1000, 600);
+	createCanvas(1000, 800);
 	player = new Character();
 	player.show();
 	//river = new obj();
@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(50);
+  background(132, 200, 130);
 
   if(keyIsDown(UP_ARROW)) {
   	spr.position.y -= 5;

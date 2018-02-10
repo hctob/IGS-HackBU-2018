@@ -7,8 +7,8 @@
 }
 
 #gamescreen {
-	display: table;
-	margin: 0 auto;
+margin: 50px;
+left: 50%;
 }
 
 .nava
@@ -16,7 +16,7 @@
 width: 101%;
 height: 50px;
 position: absolute;
-top: 17%;
+top: 0;
 margin-left: -10px;
 margin-bottom: 20px;
 background: #2d2d2d;
