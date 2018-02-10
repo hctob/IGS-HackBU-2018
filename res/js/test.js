@@ -7,27 +7,16 @@ function setup() {
 }
 
 function draw() {
-	background(220);
-	drawSprites();
-
+  background(50);
+  spr.velocity.x = (mouseX - spr.position.x) * 0.2;
+  spr.velocity.y = (mouseY - spr.position.y) * 0.2;
+  drawSprites();
 }
 
 function Character() {
-	this.x = 10;
-	this.y = 10;
-	this.xspeed = 0;
-	this.yspeed = 0;
-
-	this.changeDir = function(x,y) {
-		this.xspeed = x;
-		this.yspeed = y;
-	}
 
 	this.show = function() {
-		fill(100);
+		spr = createSprite(width/2, height/2, 40, 40);
+  		spr.shapeColor = color(255, 0, 0);
 	}
-}
-
-function keyPressed() {
-
 }
