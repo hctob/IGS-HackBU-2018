@@ -1,0 +1,61 @@
+/*main.css*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700);
+
+
+#container {
+	width: 100%;
+}
+
+#gamescreen {
+	display: table;
+	margin: 0 auto;
+}
+
+.nava
+{
+width: 101%;
+height: 50px;
+position: absolute;
+top: 17%;
+margin-left: -10px;
+margin-bottom: 20px;
+background: #2d2d2d;
+box-shadow: 0px 2px 2px #111;
+}
+.nava ul
+{
+list-style-type: none;
+}
+.nava ul li
+{
+font-family: 'Roboto', sans-serif;
+color: #ddd;
+padding-right: 5px;
+padding-left: 3px;
+margin-top: -6px;
+font-size: 1.5em;
+display: inline-block;
+text-align: center;
+height: 55px;
+}
+.nava ul li > a
+{
+text-decoration: none;
+color: #ddd;
+display: block;
+height: 55px;
+text-transform: uppercase;
+transition: all 0.4s;
+-webkit-transition: all 0.4s;
+-o-transition: all 0.4s;
+-moz-transition: all 0.4s;
+}
+.nava ul li > a.active
+{
+color: #285592;
+}
+.nava ul li > a:hover
+{
+color: #4DB0CA;
+transform: scale(1.01);
+}

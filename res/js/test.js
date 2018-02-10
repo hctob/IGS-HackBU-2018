@@ -1,9 +1,13 @@
 var player;
+var wallSpr;
+var river;
 
 function setup() {
-	createCanvas(400, 600);
+	createCanvas(1000, 600);
 	player = new Character();
 	player.show();
+	//river = new obj();
+	//river.show();
 }
 
 function draw() {
@@ -23,7 +27,6 @@ function draw() {
   }
 
 
-
   drawSprites();
 }
 
@@ -35,16 +38,18 @@ function Character() {
 		spr = createSprite(width/2, height/2, 40, 40);
   		spr.shapeColor = color(255, 0, 0);
   		//text("GeebLord", spr.position.x, spr.positon.y + 10);
-  		this.x = spr.position.x;
-  		this.y = spr.position.y;
-  		var s = "X: " + this.x + " Y: " + this.y;
-  		text(s, this.x, this.y - 10);
+  		//var s = "X: " + this.x + " Y: " + this.y;
+  		//text(s, this.x, this.y - 10);
 	}
 
 	this.interact = function() {
 	}
 }
 
-function Wall() {
-
-}
+/*function obj() {
+	this.type = "WALL";
+	this.show() {
+		var wallSpr = createSprite(1000, 100, 0, 100);
+		wallSpr.shapeColor = color(149, 149, 149);
+	}
+}*/
