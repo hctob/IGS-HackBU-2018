@@ -9,10 +9,21 @@ function setup() {
 function draw() {
   background(50);
 
-  if(mouseIsPressed) {
-  	spr.position.x = (mouseX);
-  	spr.position.y = (mouseY);
+  if(keyIsDown(UP_ARROW)) {
+  	spr.position.y -= 5;
   }
+  if(keyIsDown(DOWN_ARROW)) {
+  	spr.position.y += 5;
+  }
+  if(keyIsDown(LEFT_ARROW)) {
+  	spr.position.x -= 5;
+  }
+  if(keyIsDown(RIGHT_ARROW)) {
+  	spr.position.x += 5;
+  }
+
+
+
   drawSprites();
 }
 
@@ -26,6 +37,8 @@ function Character() {
   		//text("GeebLord", spr.position.x, spr.positon.y + 10);
   		this.x = spr.position.x;
   		this.y = spr.position.y;
+  		var s = "X: " + this.x + " Y: " + this.y;
+  		text(s, this.x, this.y - 10);
 	}
 
 	this.interact = function() {
